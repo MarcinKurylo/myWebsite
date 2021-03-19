@@ -1,0 +1,26 @@
+<section id="contact">
+    <h1 class="en-text">Contact</h1>
+    <h1 class="fr-text">Le contact</h1>
+    <h1 class="pl-text">Kontakt</h1>
+    <p class="en-text">You can find me on:</p>
+    <p class="fr-text">Trouvez-moi sur:</p>
+    <p class="pl-text">Znajdziesz mnie na:</p>
+    <ul>
+        <li><%- include("./svg/contact.svg") %> me@marcinkurylo.com</li>
+        <li><%- include("./svg/github.svg") %> github.com/MarcinKurylo</li>
+        <li><%- include("./svg/call.svg") %> +48 505 964 404</li>
+    </ul>
+    <p class="en-text">Or leave me a message here:</p>
+    <p class="fr-text">Ou laissez-moi un message ici:</p>
+    <p class="pl-text">Albo zostaw mi wiadomość tutaj:</p>
+    <form action="/sendEmail" method="post" id="contact-form">
+        <div class="col">
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+        </div>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave me a message" required></textarea>
+        <button type="submit"><%- include("./svg/send.svg") %></button>
+    </form>
+</section>

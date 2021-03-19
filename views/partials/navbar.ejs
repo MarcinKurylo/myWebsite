@@ -1,0 +1,60 @@
+<nav class="navbar">
+    <ul class="navbar-nav">
+        <li class="logo">
+            <a href="/" class="nav-link">
+                <span class="link-text">Marcin Kuryło</span>
+                <%- include("./svg/arrows.svg") %> 
+            </a>
+        </li>
+        <li class="nav-item" id="aboutNav">
+            <a href="#" class="nav-link">
+                <%- include("./svg/about.svg") %> 
+                <span class="link-text"><p class="en-text">About me</p></span>
+                <span class="link-text"><p class="fr-text">À propos de moi</p></span>
+                <span class="link-text"><p class="pl-text">O mnie</p></span>
+            </a>
+        </li>
+        <li class="nav-item" id="technicalNav">
+            <a href="#" class="nav-link">
+                <%- include("./svg/coding.svg") %> 
+                <span class="link-text"><p class="en-text">Technical stack</p></span>
+                <span class="link-text"><p class="fr-text">Les compétences techniques</p></span>
+                <span class="link-text"><p class="pl-text">Umiejętności techniczne</p></span>
+            </a>
+        </li>
+        <li class="nav-item" id="projectsNav">
+            <a href="#" class="nav-link">
+                <%- include("./svg/projects.svg") %> 
+                <span class="link-text"><p class="en-text">Projects</p></span>
+                <span class="link-text"><p class="fr-text">Les projets</p></span>
+                <span class="link-text"><p class="pl-text">Projekty</p></span>
+            </a>
+        </li>
+        <li class="nav-item" id="contactNav">
+            <a href="#" class="nav-link">
+                <%- include("./svg/contact.svg") %> 
+                <span class="link-text"><p class="en-text">Contact</p></span>
+                <span class="link-text"><p class="fr-text">Le contact</p></span>
+                <span class="link-text"><p class="pl-text">Kontakt</p></span>
+            </a>
+        </li>
+        <li class="nav-item" id="settingsNav">
+            <a href="#" class="nav-link">
+                <div class="language-radio">
+                    <label>
+                        <input type="radio" id="en-flag" name="language" value="en" checked>
+                        <img src="/images/united-kingdom.png" alt="">
+                    </label>
+                    <label>
+                        <input type="radio" id="fr-flag" name="language" value="fr">
+                        <img src="/images/france.png" alt="">
+                    </label>
+                    <label>
+                        <input type="radio" id="pl-flag" name="language" value="pl">
+                        <img src="/images/poland.png" alt="">
+                    </label>
+                </div>
+            </a>
+        </li>
+    </ul>
+</nav>
