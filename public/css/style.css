@@ -9,6 +9,9 @@
     --icon-secondary: #fca311;
     --transition-time: 300ms;
 }
+.fr-text, .pl-text{
+    display: none;
+}
 html{
     scrollbar-width: none;
 }
